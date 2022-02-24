@@ -191,6 +191,8 @@ async function saveBookmark(tags) {
 
     // Send request via background script
     var data = {
+        public: 1,
+        createArchive: true,
         url: tab.url,
         tags: tags,
         html: content.html || "",
